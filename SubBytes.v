@@ -31,13 +31,6 @@ module SubBytes(
     reg [127:0] byteNum; 
     reg [127:0] temp;
     
-
-    initial begin
-        byteNum = 0;
-        finish_sub = 1'b0;
-        temp = 128'b0;
-    end
-    
     always @(posedge clk) begin
         
         if (strt) begin
