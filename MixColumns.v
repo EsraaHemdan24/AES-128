@@ -14,16 +14,6 @@ reg [31:0] in3;
 reg [127:0] byteNum;
 reg [127:0] rowNum;
 
-initial begin
-    byteNum = 0;
-    rowNum = 0;
-    finish_mix = 1'b0;
-    in0 = 32'b0;
-    in1 = 32'b0;
-    in2 = 32'b0;
-    in3 = 32'b0;
-end
-
 always @(posedge clk) begin
 
     if (finish_shift) begin
