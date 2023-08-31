@@ -7,10 +7,6 @@ module ShiftRows(
     );
     reg [127:0] in;
 
-    initial begin
-        finish_shift = 1'b0;
-    end
-
     always @(posedge clk ) begin
         if (finish_sub & (!finish_shift) ) begin
             in [31:0] = stt_mat [31:0];
