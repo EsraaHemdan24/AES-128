@@ -1,14 +1,4 @@
-/*
-Project        : AES
-Standard doc.  : 
-Module name    : SBox block
-Dependancy     :
-Design doc.    : 
-References     : 
-Description    : Sbox is a lookup/substitution table to 
-                 substitute the input byte
-Owner          : Omar Amin
-*/
+
 
 `timescale 1 ns/1 ps
 
